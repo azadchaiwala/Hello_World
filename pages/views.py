@@ -12,7 +12,12 @@ def aboutView(request):
 
     return HttpResponse(message)
 
-def footerview(request):
-    message=('this is footer section')
+def contactView(request):
+    message=('this is contact section')
+
+    return HttpResponse(message)
+
+def cartView(request):
+    message=('this is a cart section')
 
     return HttpResponse(message)
