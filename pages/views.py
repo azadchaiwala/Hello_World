@@ -1,11 +1,15 @@
 from django.http import HttpResponse
+from django.views.generic import TemplateView
 
 # Create your views here.
-def homeView(request):
-    message='Hello Husnain'
+# def homeView(request):
+#     message='Hello Husnain'
 
 
-    return HttpResponse(message)
+#     return HttpResponse(message)
+
+class homeview(TemplateView):
+    template='index.html'
 
 def aboutView(request):
     message=('this is about section of our project')
@@ -21,3 +25,5 @@ def cartView(request):
     message=('this is a cart section')
 
     return HttpResponse(message)
+
+
