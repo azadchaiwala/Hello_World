@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is header</h1>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+Welcome to home page
+{% endblock title %}
+
+{% block content %}
+<h1>this is a home section of our project</h1>
+{% endblock content %}

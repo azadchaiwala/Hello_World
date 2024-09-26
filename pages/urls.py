@@ -1,10 +1,10 @@
 from django.urls import path
 
-from pages.views import homeView,aboutView,contactView,cartView
+from pages.views import HomeView,aboutView,contactView,cartView
 
 urlpatterns = [
-    path('home/',homeView.as_view()),
-    path('about/',aboutView.as_view()),
-    path('contact/',contactView.as_view()),
-    path('cart/',cartView.as_view()),
+    path('',HomeView.as_view(), name = 'index'),
+    path('about/',aboutView, name = 'about'),
+    path('contact/',contactView.as_view(), name = 'contact'),
+    path('cart/',cartView.as_view(), name = 'cart'),
 ]
